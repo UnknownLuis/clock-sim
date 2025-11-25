@@ -19,22 +19,22 @@ public class ClockTime {
     /**
      * Amount of seconds in a day.
      */
-    protected static final int secsInDay = 86400;
+    protected static final int SECS_IN_DAY = 86400;
 
     /**
      * Amount of seconds in an hour.
      */
-    protected static final int secsInHour = 3600;
+    protected static final int SECS_IN_HOUR = 3600;
 
     /**
      * Amount of seconds in a minute.
      */
-    protected static final int secsInMin = 60;
+    protected static final int SECS_IN_MIN = 60;
 
     /**
      * Default time set for a no-argument constructor of ClockTime.
      */
-    private static final int defaultTime = 0;
+    private static final int DEFAULT_TIME = 0;
 
     /**
      * Constructor for ClockTime with a setting for the initial time.
@@ -48,7 +48,7 @@ public class ClockTime {
      * Default Constructor for ClockTime, with a default initial time.
      */
     public ClockTime(){
-        this(defaultTime);
+        this(DEFAULT_TIME);
     }
 
     /**
@@ -63,13 +63,13 @@ public class ClockTime {
         // each item is the remainder from dividing by secsIn(x) members above
 
         // seconds is the remainder by dividing by minutes
-        timeList.add((unixSeconds%secsInMin)/1);
+        timeList.add((unixSeconds%SECS_IN_MIN)/1);
 
         // minutes is the remainder from dividing by hours (then converting to minutes)
-        timeList.add((unixSeconds%secsInHour)/secsInMin);
+        timeList.add((unixSeconds%SECS_IN_HOUR)/SECS_IN_MIN);
 
         // hours is the remainder from dividing by days (then converting to hours)
-        timeList.add((unixSeconds%secsInDay)/secsInHour);
+        timeList.add((unixSeconds%SECS_IN_DAY)/SECS_IN_HOUR);
         
         // convert to true array
         int[] timeArr = new int[3];
@@ -114,7 +114,7 @@ public class ClockTime {
      */
     public static void main(String[] args) {
         // testing for 5:26:57 PM -> 17:26:57
-        int initTime = (17*secsInHour)+(26*secsInMin)+(57);
+        int initTime = (17*SECS_IN_HOUR)+(26*SECS_IN_MIN)+(57);
         ClockTime test = new ClockTime(initTime);
         // test OK
 
