@@ -108,6 +108,10 @@ public class ClockTime {
         return timeStr;
     }
 
+    /**
+     * Main method, used for testing.
+     * @param args
+     */
     public static void main(String[] args) {
         // testing for 5:26:57 PM -> 17:26:57
         int initTime = (17*secsInHour)+(26*secsInMin)+(57);
