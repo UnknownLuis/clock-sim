@@ -145,5 +145,8 @@ public class ClockTime {
         test.tick();
         test.display();
         // test OK
+
+        test.reset();
+        test.display();
     }
 }
