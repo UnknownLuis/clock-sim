@@ -15,4 +15,8 @@ abstract class Clock {
      */
     protected int clockTime;
 
+    /**
+     * How much this clock drifts away from "true" time every second.
+     */
+    private double driftPerSecond;
 }
