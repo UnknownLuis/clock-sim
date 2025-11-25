@@ -149,5 +149,6 @@ public class ClockTime {
         System.out.println();
         test.reset();
         test.display();
+        // test OK
     }
 }
