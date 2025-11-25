@@ -21,21 +21,6 @@ abstract class Clock {
     private double driftPerSecond;
 
     /**
-     * Amount of seconds in a day.
-     */
-    protected final int secsInDay = 86400;
-
-    /**
-     * Amount of seconds in an hour.
-     */
-    protected final int secsInHour = 3600;
-
-    /**
-     * Amount of seconds in a minute.
-     */
-    protected final int secsInMin = 60;
-
-    /**
      * Returns clockTime to 0.
      */
     protected abstract void reset();
