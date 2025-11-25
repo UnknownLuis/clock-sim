@@ -32,6 +32,11 @@ public class ClockTime {
     protected final int secsInMin = 60;
 
     /**
+     * Default time set for a no-argument constructor of ClockTime.
+     */
+    private final int defaultTime = 0;
+
+    /**
      * Constructor for ClockTime with a setting for the initial time.
      * @param initTime The inital time for this clock in seconds.
      */
