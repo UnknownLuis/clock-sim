@@ -49,6 +49,33 @@ abstract class Clock {
     protected abstract void tick();
 
     /**
+     * Returns the clock time as an array.
+     * @return The clock time as an array, syled at [Seconds, Minutes, Hours]
+     */
+    protected int[] listTime(){
+        // set up return list.
+        ArrayList<Integer> timeList = new ArrayList<>(3);
+
+        // loop time back if after 24 hours
+        int dayTime = clockTime % secsInDay;
+
+        // add seconds, minutes, hours
+        timeList.add(dayTime%secsInMin);
+        timeList.add(dayTime/secsInMin);
+        timeList.add(dayTime/secsInHour);
+        
+        // convert to true array
+        int[] timeArr = new int[3];
+        for (int i = 0; i < timeList.size(); i++) {
+            Integer tm = timeList.get(i);
+            timeArr[i]=tm;
+        }
+
+        // return true array
+        return timeArr;
+    }
+
+    /**
      * Displays time in terminal.
      */
     public abstract void displayTime();
