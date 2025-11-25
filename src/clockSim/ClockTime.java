@@ -103,4 +103,8 @@ public class ClockTime {
         // return string
         return timeStr;
     }
+
+    public static void main(String[] args) {
+        
+    }
 }
