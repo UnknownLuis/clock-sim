@@ -30,4 +30,9 @@ abstract class Clock {
      * The clock's display will advance one second, but true time may advance more due to drift.
      */
     protected abstract void tick();
+
+    /**
+     * Displays time in terminal.
+     */
+    public abstract void displayTime();
 }
