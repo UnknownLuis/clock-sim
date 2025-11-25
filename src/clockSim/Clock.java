@@ -3,6 +3,8 @@
  */
 package clockSim;
 
+import java.util.ArrayList;
+
 /**
  * Base class for all Clocks. Contains:
  * Integer clockTime,
