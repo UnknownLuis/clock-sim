@@ -38,6 +38,16 @@ abstract class Clock {
     protected final int secsInMin = 60;
 
     /**
+     * Constructor.
+     * @param drift How much this clock drifts away from real time per tick (virtual second)
+     * @param initTime What time this clock starts at.
+     */
+    public Clock(double drift, int initTime){
+        driftPerSecond = drift;
+        clockTime = new ClockTime(initTime);
+    }
+
+    /**
      * Returns clockTime to 0.
      */
     protected abstract void reset();
