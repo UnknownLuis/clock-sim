@@ -14,8 +14,6 @@ public class SundialClock extends NaturalClock {
 
     @Override
     protected void tick() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'tick'");
     }
 
     @Override
