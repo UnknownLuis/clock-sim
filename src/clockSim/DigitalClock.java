@@ -8,4 +8,11 @@ package clockSim;
  */
 public abstract class DigitalClock extends Clock {
 
+    /**
+     * Constructor with a default initial time.
+     * @param drift How much this clock drifts away from real time per tick / virtual second.
+     */
+    protected DigitalClock(double drift){
+        super(drift);
+    }
 }
