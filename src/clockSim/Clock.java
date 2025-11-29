@@ -8,6 +8,7 @@ package clockSim;
  * Integer clockTime,
  * double driftPerSecond,
  * virtual (empty) methods reset, tick, displayTime.
+ * @author Peter Uriarte & Luis Martinez
  */
 abstract class Clock {
     /**
