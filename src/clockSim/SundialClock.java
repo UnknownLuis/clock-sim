@@ -9,8 +9,6 @@ public class SundialClock extends NaturalClock {
 
     @Override
     protected void reset() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'reset'");
     }
 
     @Override
