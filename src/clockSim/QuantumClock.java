@@ -8,4 +8,11 @@ package clockSim;
  */
 public abstract class QuantumClock extends Clock {
 
+    /**
+     * Constructor with a default initial time.
+     * @param drift How much this clock drifts away from real time per tick / virtual second.
+     */
+    protected QuantumClock(double drift){
+        super(drift);
+    }
 }
