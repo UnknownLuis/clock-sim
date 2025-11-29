@@ -14,6 +14,7 @@ public class SundialClock extends NaturalClock {
 
     @Override
     protected void tick() {
+        super.clockTime.tick();
     }
 
     @Override
