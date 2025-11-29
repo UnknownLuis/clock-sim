@@ -6,6 +6,6 @@ package clockSim;
  * @version 0.1.0.0 (MARKETING.BREAKING.FEATURE.PATCH) - 
  * Create class
  */
-public abstract class DigitalClock {
+public abstract class DigitalClock extends Clock {
 
 }
