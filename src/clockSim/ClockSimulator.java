@@ -53,6 +53,9 @@ public class ClockSimulator {
 		System.out.println();
 		System.out.println("Running the clocks for one (1) week...");
 		System.out.println();
+
+		System.out.println("Reported clock times after running:");
+		System.out.println("=====================================");
 	}
 
 }
