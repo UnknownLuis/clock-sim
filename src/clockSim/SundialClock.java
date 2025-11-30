@@ -37,6 +37,9 @@ public class SundialClock extends NaturalClock {
             super.clockTime.stringTime(),
             (int)Math.round(super.driftPerSecond*super.clockTime.getUnixSeconds())
         );
+
+        // outputs:
+        // Sundial Clock time [00:00:00] - total drift = 0 seconds
     }
 
     public static void main(String[] args) {
