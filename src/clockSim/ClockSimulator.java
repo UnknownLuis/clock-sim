@@ -34,6 +34,7 @@ public class ClockSimulator {
 		Running the clocks for one (1) week...
 
 		Reported clock times after running:
+		===================================
 		Sundial Clock time [00:00:00] - total drift = 0 seconds
 		Cuckoo Clock time [00:00:00] - total drift = 420 seconds
 		Grandfather Clock time [00:00:00] - total drift = 210 seconds
