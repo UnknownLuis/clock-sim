@@ -16,6 +16,9 @@ public class ClockSimulator {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		// how many seconds in a week?
+		int secsInWeek = 604800;
+
 		// list of clocks
 		Clock[] clocks = {
 			new SundialClock(),
