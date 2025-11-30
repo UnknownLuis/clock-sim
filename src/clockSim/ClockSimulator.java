@@ -42,7 +42,8 @@ public class ClockSimulator {
 		===================================
 		 */
 
-		System.out.println("Reported clock times after resetting:\n=====================================");
+		System.out.println("Reported clock times after resetting:");
+		System.out.println("=====================================");
 	}
 
 }
