@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  * Data Type that handles conversion between Unix integer and Hours:Minutes:Seconds.
  * @author Peter Uriarte
- * @version 0.1.0.0 (Epoch SemVer)
+ * @version 0.1.1.0 New method getUnixSeconds()
  */
 public class ClockTime {
     /**
@@ -17,6 +17,13 @@ public class ClockTime {
     private int unixSeconds;
 
     /**
+	 * @return the unixSeconds
+	 */
+	protected int getUnixSeconds() {
+		return unixSeconds;
+	}
+
+	/**
      * Amount of seconds in a day.
      */
     protected static final int SECS_IN_DAY = 86400;
