@@ -45,7 +45,9 @@ public class SundialClock extends NaturalClock {
     public static void main(String[] args) {
         SundialClock test = new SundialClock();
 
+        // tests display time
         test.displayTime();
+        // OK
     }
 
 }
