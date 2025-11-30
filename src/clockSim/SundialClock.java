@@ -16,7 +16,7 @@ public class SundialClock extends NaturalClock {
      * Constructor with a default initial time.
      */
     public SundialClock() {
-        super(0);
+        super(DRIFT_PER_SECOND);
     }
 
     @Override
