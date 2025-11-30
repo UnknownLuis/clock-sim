@@ -65,6 +65,7 @@ public class ClockSimulator {
 			for (int i = 0; i < secsInWeek; i++) {
 				clock.tick();
 			}
+			clock.displayTime();
 		}
 	}
 
