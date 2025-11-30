@@ -62,7 +62,7 @@ public class ClockSimulator {
 
 		// for each clock, advance by week, display
 		for (Clock clock : clocks) {
-			for (int i = 0; i < 604800; i++) {
+			for (int i = 0; i < secsInWeek; i++) {
 				clock.tick();
 				clock.displayTime();
 			}
