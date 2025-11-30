@@ -16,6 +16,11 @@ public class ClockSimulator {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		// list of clocks
+		Clock[] clocks = {
+			new SundialClock(),
+		};
+
 		/*
 		Expected output:
 		Reported clock times after resetting:
