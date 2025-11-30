@@ -44,6 +44,11 @@ public class ClockSimulator {
 
 		System.out.println("Reported clock times after resetting:");
 		System.out.println("=====================================");
+
+		// for each clock, display time
+		for (Clock clock : clocks) {
+			clock.displayTime();
+		}
 	}
 
 }
