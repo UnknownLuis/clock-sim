@@ -2,7 +2,7 @@ package clockSim;
 
 /**
  * Class that represents a sundial.
- * @author Luis Martinez
+ * @author Luis Martinez & Peter Uriarte
  * @version 0.1.1.0 - Add method displayTime()
  */
 public class SundialClock extends NaturalClock {
