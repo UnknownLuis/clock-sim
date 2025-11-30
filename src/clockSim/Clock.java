@@ -20,7 +20,7 @@ abstract class Clock {
     /**
      * How much this clock drifts away from "true" time every second.
      */
-    private double driftPerSecond;
+    protected double driftPerSecond;
 
     /**
      * Constructor.
