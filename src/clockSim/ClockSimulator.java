@@ -57,6 +57,7 @@ public class ClockSimulator {
 		System.out.println("Reported clock times after running:");
 		System.out.println("=====================================");
 
+		// for each clock, advance by week, display
 		for (Clock clock : clocks) {
 			for (int i = 0; i < 604800; i++) {
 				clock.tick();
