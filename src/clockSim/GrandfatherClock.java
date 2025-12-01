@@ -58,7 +58,7 @@ public class GrandfatherClock extends MechanicalClock {
         }
         // confirm with display
         // should be 30 seconds
-        System.out.println("After 6mins");
+        System.out.println("After 24 hours");
         test.displayTime();
 
         // test reset and confirm
