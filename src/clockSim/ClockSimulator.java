@@ -6,7 +6,7 @@ package clockSim;
 /**
  * A program that simulates workflow of multiple types of clocks for a week and compares how much they drift from real time.
  * @author Peter Uriarte
- * @version 0.1.4.0 (MARKETING.BREAKING.FEATURE.PATCH) - Add GrandfatherClock
+ * @version 0.1.5.0 (MARKETING.BREAKING.FEATURE.PATCH) - Add Atomic Clock
  */
 public class ClockSimulator {
 
@@ -14,8 +14,6 @@ public class ClockSimulator {
 	 * Creates a collection of different clocks, and compares their drift from creation to a week later.
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		// how many seconds in a week?
 		int secsInWeek = 604800;
 
@@ -25,6 +23,7 @@ public class ClockSimulator {
 			new CuckooClock(),
 			new GrandfatherClock(),
 			new WristClock(),
+			new AtomicClock(),
 		};
 
 		/*
